@@ -1,0 +1,134 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.img-right {
+    width: 100px;
+    height: 100px;
+}
+.img-bottom-right {
+    width: 300px;
+    height: 250px;
+}
+.img-bottom {
+    width: 190px;
+    height: 130px;
+}
+.img-reklama {
+    width: 300px;
+    height: 80px;
+}
+.img-col {
+    width: 450px;
+    height: 380px;
+}
+.img-centre {
+    width: 950px;
+    height: 550px;
+    /*margin-left: 150px;*/
+}
+
+/* my styles*/
+
+/*.rooms-section {
+    padding-top: 0;
+    padding-bottom: 80px;
+}
+.room-item {
+    margin-bottom: 30px;
+}
+.room-item .ri-text {
+    border: 1px solid #ebebeb;
+    border-top: none;
+    padding: 24px 24px 30px 28px;
+}
+.room-item .ri-text table tbody tr td.r-o {
+    width: 125px;
+}*/
+
+
+/*.top-div {
+    margin-top: 25px;
+    position: relative;
+}
+
+.img-div {
+    position:relative;
+    height: 190px;
+}
+
+.show {
+    position: absolute;
+    bottom: 15px;
+    width: 14rem;
+}*/
+
+

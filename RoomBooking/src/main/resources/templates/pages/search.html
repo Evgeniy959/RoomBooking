@@ -1,0 +1,18 @@
+<th:block th:fragment="content">
+    <h2>Booking Your Hotel</h2>
+    <form th:action="@{/search}" th:object="${room}" method="post">
+        <div class="form-group">
+            <label>Enter the start date :</label>
+            <input required name="start" th:field="*{start}" placeholder="Enter the date" type="datetime-local" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Enter the end date :</label>
+            <input required name="end" th:field="*{end}" type="datetime-local" class="form-control" />
+        </div>
+        <br />
+        <div class="form-group">
+            <input type="submit"  class="form-control btn btn-primary"  value="Search"/>
+        </div>
+    </form>
+
+</th:block>

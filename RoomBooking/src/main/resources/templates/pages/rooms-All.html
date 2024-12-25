@@ -1,0 +1,38 @@
+<th:block th:fragment="content">
+
+    <section class="rooms-section spad">
+        <div class="container">
+            <div class="row">
+                <div th:each = "room: ${rooms}" class="col-lg-4 col-md-6">
+                    <div class="room-item">
+                        <img th:src="${room.photo}" class="card-img-top"  alt="...">
+                        <div class="ri-text">
+                            <table class="tab">
+                                <tbody>
+                                <tr>
+                                    <td class="r-o">Room number:</td>
+                                    <td th:text = "${room.roomNumber}"/>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Persons count:</td>
+                                    <td th:text = "${room.personsCount}"/>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Price,$:</td>
+                                    <td th:text = "${room.price}"/>
+                                </tr>
+                                <tr>
+                                    <td class="r-o">Services:</td>
+                                    <td>Wifi, Television, Bathroom,...</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <a th:href="@{#}" class="primary-btn">More Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</th:block>

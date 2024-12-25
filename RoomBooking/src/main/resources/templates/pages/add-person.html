@@ -1,0 +1,25 @@
+<th:block th:fragment="content">
+    <h2>Please enter your contact data</h2>
+    <form th:action="@{/add-person}" th:object="${person}" method="post">
+        <div class="form-group">
+            <label>Enter name :</label>
+            <input required name="name" th:field="*{firstname}" placeholder="Enter name" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Enter email :</label>
+            <input required name="email" th:field="*{email}" placeholder="Enter email" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label>Phone :</label>
+            <input required name="phone" th:field="*{phone}" placeholder="Enter phone" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+            <input required name="roomNumber" th:field="*{roomNumber}" type="hidden" class="form-control" />
+        </div>
+        <br />
+        <div class="form-group">
+            <input type="submit"  class="form-control btn btn-primary"  value="Submit"/>
+        </div>
+    </form>
+
+</th:block>

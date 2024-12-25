@@ -1,0 +1,99 @@
+﻿/* my styles*/
+
+.bod {
+    background-color:#8fd19e;
+}
+.top-div {
+    margin-top: 15px;
+    position: relative;
+}
+
+.img-div {
+    position:relative;
+    height: 190px;
+}
+
+.show {
+    position: absolute;
+    bottom: 15px;
+    width: 14rem;
+}
+
+.spad {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.rooms-section {
+    padding-top: 0;
+    padding-bottom: 80px;
+}
+.room-item {
+    margin-bottom: 30px;
+}
+.room-item .ri-text {
+    border: 1px solid #ebebeb;
+    border-top: none;
+    padding: 24px 24px 30px 28px;
+}
+.room-item .ri-text table tbody tr td.r-o {
+    width: 125px;
+    border: hidden;
+}
+.primary-btn {
+    display: inline-block;
+    font-size: 13px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    position: relative;
+}
+.primary-btn:after {
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 2px;
+    background: #dfa974;
+    content: "";
+}
+.contact-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.contact-text h2 {
+    font-size: 44px;
+    color: #19191a;
+    margin-bottom: 24px;
+}
+.contact-text p {
+    color: #707079;
+}
+.contact-text table tbody tr td {
+    font-size: 16px;
+    color: #19191a;
+    line-height: 36px;
+    font-weight: 500;
+}
+.contact-text table tbody tr td.c-o {
+    color: #707079;
+    width: 75px;
+    border: hidden;
+}
+.map {
+    height: 470px;
+    -webkit-box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 14px 35px rgba(0, 0, 0, 0.15);
+    margin-top: 75px;
+}
+.map iframe {
+    width: 100%;
+}
+
+.tab {
+    border: hidden;
+}
+
+
+

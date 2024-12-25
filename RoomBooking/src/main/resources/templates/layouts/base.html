@@ -1,0 +1,31 @@
+<th:block th:fragment="default(route)">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <th:block th:insert="fragments/common.html :: meta"></th:block>
+    <th:block th:insert="fragments/common.html :: styles"></th:block>
+    <th:block th:insert="fragments/common.html :: title(${route})"></th:block>
+</head>
+<body id="top">
+<th:block th:insert="fragments/common.html :: header"></th:block>
+
+<div class="container">
+    <main role="main" class="pb-3">
+            <th:block th:switch="${route}">
+                <th:block th:case="add-person" th:insert="pages/add-person.html :: content"></th:block>
+                <th:block th:case="room-list" th:insert="pages/room-list.html :: content"></th:block>
+                <th:block th:case="rooms-All" th:insert="pages/rooms-All.html :: content"></th:block>
+                <th:block th:case="search" th:insert="pages/search.html :: content"></th:block>
+                <th:block th:case="message" th:insert="pages/message.html :: content"></th:block>
+                <th:block th:case="contact-info" th:insert="pages/contact-info.html :: content"></th:block>
+                <div th:case="*">Unknown!</div>
+            </th:block>
+    </main>
+</div>
+
+<th:block th:insert="fragments/common.html :: lowerBlock"></th:block>
+
+<th:block th:insert="fragments/common.html :: scripts"></th:block>
+
+</body>
+</html>
+</th:block>

@@ -1,0 +1,104 @@
+<th:block th:fragment="meta">
+  <meta charset="UTF-8">
+
+</th:block>
+<th:block th:fragment="styles">
+  <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- Css Styles -->
+  <link rel="stylesheet" href="/css1/site.css" />
+  <link rel="stylesheet" href="/css1/style.scss" />
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css">
+
+</th:block>
+
+<th:block th:fragment="title(route)">
+  <title th:switch="${route}">
+    <th:block th:case="add-person">Person</th:block>
+    <th:block th:case="room-list">Rooms</th:block>
+    <th:block th:case="search">Search</th:block>
+    <th:block th:case="message">Message</th:block>
+    <th:block th:case="rooms-All">Rooms-All</th:block>
+    <th:block th:case="contact-info">Contact-info</th:block>
+    <th:block th:case="*">Unknown!</th:block>
+  </title>
+</th:block>
+
+<th:block th:fragment="header">
+  <div class="wrapper col0">
+    <div id="topline">
+      <p>Tel: xxxxx xxxxxxxxxx | Mail: info@domain.com</p>
+      <ul>
+        <li><a href="/room">Booking now</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+      <br class="clear">
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper">
+    <div id="header">
+      <div class="fl_left">
+        <h1><a href="#"><strong>S</strong>ona <strong>A</strong> <strong>L</strong>uxury <strong>H</strong>otel</a></h1>
+        <h3>Here are the best hotel booking sites</h3>
+      </div>
+      <div class="fl_right"><a href="#"><img src="/img/room/room-b1.jpg" alt=""></a></div>
+      <br class="clear">
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col2">
+    <div id="topbar">
+      <div id="topnav">
+        <ul>
+          <li class="active"><a href="/room">Home</a></li>
+          <li><a href="/rooms">Rooms</a></li>
+          <li><a href="#">News</a></li>
+          <li class="last"><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <br class="clear">
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+
+</th:block>
+
+<th:block th:fragment="lowerBlock">
+  <!-- ####################################################################################################### -->
+  <div class="wrapper">
+    <div id="socialise">
+      <ul>
+        <li><a href="#"><img src="/images/facebook.gif" alt=""><span>Facebook</span></a></li>
+        <li><a href="#"><img src="/images/rss.gif" alt=""><span>FeedBurner</span></a></li>
+        <li class="last"><a href="#"><img src="/images/twitter.gif" alt=""><span>Twitter</span></a></li>
+      </ul>
+      <div id="newsletter">
+        <div class="fl_right"><a href="#"><img src="/img/gallery/gallery-3.jpg" alt=""></a></div>
+
+      </div>
+      <br class="clear">
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col8">
+    <div id="copyright">
+      <p class="fl_left">Copyright © 2014 - All Rights Reserved - <a href="#">Domain Name</a></p>
+      <p class="fl_right">Template by <a target="_blank" href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+      <br class="clear">
+    </div>
+  </div>
+
+</th:block>
+
+<th:block th:fragment="scripts">
+  <script type="text/javascript" src="/scripts/jquery.min.js"></script>
+  <!-- Homepage Specific -->
+  <script type="text/javascript" src="/scripts/galleryviewthemes/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="/scripts/galleryviewthemes/jquery.timers.1.2.js"></script>
+  <script type="text/javascript" src="/scripts/galleryviewthemes/jquery.galleryview.2.1.1.min.js"></script>
+  <script type="text/javascript" src="/scripts/galleryviewthemes/jquery.galleryview.setup.js"></script>
+  <!-- / Homepage Specific -->
+  <script src="/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</th:block>
